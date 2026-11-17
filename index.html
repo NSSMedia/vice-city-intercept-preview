@@ -2,164 +2,161 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#261137">
-  <meta name="robots" content="noindex,nofollow,noarchive">
-  <meta name="description" content="VICE CITY INTERCEPT — an FLG SEMA 2026 automotive mystery. Find the story, decode the intercepted transmission and enter your final answer. Concept preview only.">
-  <title>VICE CITY INTERCEPT — FLG / SEMA 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0e24">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Vice City Intercept — an original FLG SEMA 2026 automotive mystery. Follow the trail, discover the radiogram and submit your final code. Preview only.">
+  <meta property="og:title" content="Vice City Intercept — FLG SEMA 2026">
+  <meta property="og:description" content="A classic car has vanished. Follow the story, decipher the signal, and find the final code.">
+  <title>VICE CITY INTERCEPT | SEMA 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Kaushan+Script&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="./assets/vice-city-hero-mobile.webp" media="(max-width: 700px)">
+  <link rel="preload" as="image" href="./assets/vice-city-hero-desktop.webp" media="(min-width: 701px)">
+  <link rel="stylesheet" href="./styles.css?v=20261117">
+  <script src="./app.js?v=20261117" defer></script>
 </head>
 <body>
-  <div class="prelaunch" role="note"><span class="blink-dot"></span> CONCEPT PREVIEW <span aria-hidden="true">•</span> NOT AN ACTIVE GIVEAWAY</div>
+  <div class="preview-ribbon" role="note">DESIGN PREVIEW <span aria-hidden="true">✦</span> NOT AN ACTIVE GIVEAWAY</div>
   <header class="site-header">
-    <a href="#top" class="logo" aria-label="FLG, back to top">FLG<span>✳</span></a>
-    <span class="brand-sub">FINAL LAP GIVEAWAY <span class="sep">/</span> SEMA 2026</span>
-    <a class="header-entry" href="#enter">ENTER CODE <span aria-hidden="true">↗</span></a>
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="FLG, return to top">FLG<span class="logo-star">✦</span></a>
+      <span class="header-divider" aria-hidden="true"></span>
+      <span class="event-mark">SEMA 2026</span>
+      <nav class="desktop-nav" aria-label="Sections">
+        <a href="#how">HOW TO JOIN</a><a href="#radiogram">RADIOGRAM</a><a href="#enter">SUBMIT CODE</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#how">HOW TO JOIN</a><a href="#radiogram">RADIOGRAM</a><a href="#enter">SUBMIT CODE</a><a href="#rules">RULES & STATUS</a>
+    </nav>
   </header>
-
   <main id="top">
     <section class="hero" aria-labelledby="heroTitle">
-      <img src="./assets/vice-sunset.svg" class="hero-art" alt="Original illustrated tropical sunset boulevard with a classic turquoise car and palms, inspired by modern coastal nightlife" fetchpriority="high">
-      <div class="hero-tint"></div>
-      <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-content content">
-        <div class="hero-topline"><span class="small-mark"></span> CASE FILE <b>006</b> <span class="line"></span> MIAMI AFTER DARK</div>
-        <div class="hero-center">
-          <p class="hero-strap">THE CAR IS GONE. THE STORY ISN'T OVER.</p>
-          <h1 id="heroTitle"><span>VICE CITY</span><strong>INTERCEPT<span class="hero-period">.</span></strong></h1>
-          <p class="hero-lead">A stolen classic. A trail of secrets. One final code.</p>
-          <p class="hero-desc">Follow the evidence across our SEMA film and the investigator's dispatch. Crack the intercepted message. Submit your answer.</p>
-          <div class="hero-ctas">
-            <a class="cta cta-main" href="#enter">I HAVE THE CODE <span aria-hidden="true">↗</span></a>
-            <a class="cta cta-subtle" href="#clues">FOLLOW THE STORY <span aria-hidden="true">↓</span></a>
-          </div>
+      <picture class="hero-photo">
+        <source srcset="./assets/vice-city-hero-mobile.webp" media="(max-width: 700px)" type="image/webp">
+        <img src="./assets/vice-city-hero-desktop.webp" alt="Photorealistic turquoise 1950s convertible by Miami's waterfront at a pink and violet sunset, with palms and glowing downtown skyscrapers" fetchpriority="high">
+      </picture>
+      <div class="hero-grade" aria-hidden="true"></div>
+      <div class="hero-content page">
+        <div class="hero-title-wrap">
+          <span class="hero-overline">AN ORIGINAL SEMA 2026 INVESTIGATION</span>
+          <h1 id="heroTitle"><span class="title-primary">VICE CITY</span><span class="title-script">Intercept</span></h1>
+          <span class="hero-title-rule" aria-hidden="true"></span>
         </div>
-        <div class="hero-lower"><div><span>THE CASE</span><b>1955 / CLASSIC CAR</b></div><div><span>MISSION</span><b>CRACK THE CODE</b></div><div><span>STATUS</span><b>CLASSIFIED</b></div></div>
-      </div>
-      <div class="hero-edge" aria-hidden="true">FLG // THE INTERCEPT</div>
-    </section>
-
-    <section class="prize-strip" aria-label="Proposed prizes">
-      <div class="content prize-inner">
-        <div class="prize-title"><span class="label-micro">THE PROPOSED GIVEAWAY</span><b>SIX SHOTS AT VICE CITY.</b></div>
-        <div class="prize-meta"><span class="giant-six">06</span><div><strong>GTA VI + VINTAGE VICE CITY PACK</strong><small>3 × Xbox Series X|S <span>✳</span> 3 × PlayStation 5</small></div></div>
-        <div class="prize-disclaimer">Prizes and availability to be confirmed before launch.</div>
-      </div>
-    </section>
-
-    <section class="enter-section section-pad" id="enter" aria-labelledby="enterTitle">
-      <div class="content">
-        <div class="eyebrow"><span class="dot-square"></span> SUBMIT YOUR ANSWER <span class="ref-num">/ 001</span></div>
-        <div class="enter-heading">
-          <div>
-            <h2 id="enterTitle">CRACKED<br><em>THE CASE?</em></h2>
-            <p>Already have the final code? Enter it here. If you're still searching, the clues are farther down the page.</p>
+        <div class="hero-bottom">
+          <div class="hero-story">
+            <h2>A CLASSIC CAR<br>HAS VANISHED<br><span>IN VICE CITY.</span></h2>
+            <p>Follow the clues, break the code, and help uncover what happened. Submit your final password for a chance to win one of six proposed GTA VI prizes.</p>
           </div>
-          <div class="pink-sticker" aria-hidden="true">YOUR<br>MOVE<span>✳</span></div>
-        </div>
-        <div class="entry-surface">
-          <div class="entry-banner"><div><span class="blink-dot"></span> CASE SUBMISSION / PREVIEW</div><span>AN FLG ORIGINAL</span></div>
-          <form id="entryForm" novalidate>
-            <label class="code-label" for="entryCode">YOUR FINAL CODE <span>10 CHARACTERS</span></label>
-            <div class="code-wrap">
-              <input type="text" id="entryCode" inputmode="text" maxlength="10" autocapitalize="characters" autocomplete="off" spellcheck="false" placeholder="AAAA000000" aria-describedby="codeHint" required>
-              <span class="code-decoration" aria-hidden="true">↗</span>
+          <div class="hero-prize-badge" aria-label="Six proposed GTA VI prizes">
+            <span>VI</span><strong>GTA<br>PRIZES</strong><small>CONCEPT ONLY</small>
+          </div>
+          <div class="hero-action-block">
+            <div class="prize-bar">
+              <strong class="prize-count">6</strong>
+              <span class="prize-name">GTA VI<br><b>PRIZES</b></span>
+              <span class="prize-line"></span>
+              <span class="platform-micro">✕ <b>3 FOR XBOX</b></span>
+              <span class="platform-micro">△ <b>3 FOR PLAYSTATION</b></span>
             </div>
-            <p id="codeHint" class="form-note">Four letters followed by six digits. Your answer is not checked for correctness on this page.</p>
-            <div class="form-grid">
-              <label>FIRST NAME<input id="firstName" type="text" autocomplete="off" placeholder="First name" maxlength="80" required></label>
-              <label>LAST NAME<input id="lastName" type="text" autocomplete="off" placeholder="Last name" maxlength="80" required></label>
-              <label>EMAIL ADDRESS<input id="email" type="email" autocomplete="off" placeholder="you@example.com" maxlength="254" required></label>
-              <label>STATE OF RESIDENCE<select id="state" required><option value="">Choose your state</option></select></label>
-            </div>
-            <fieldset class="platform-choices">
-              <legend>YOUR PLATFORM</legend>
-              <label class="platform-option"><input type="radio" name="platform" value="xbox" required><span class="platform-symbol">X</span><span><b>XBOX</b><small>Series X|S</small></span><i aria-hidden="true"></i></label>
-              <label class="platform-option"><input type="radio" name="platform" value="ps5" required><span class="platform-symbol">△</span><span><b>PLAYSTATION</b><small>PS5</small></span><i aria-hidden="true"></i></label>
-            </fieldset>
-            <label class="check-row"><input id="age" type="checkbox" required><span>I am at least 18 and have reached the age of majority in my state.</span></label>
-            <label class="check-row"><input id="ack" type="checkbox" required><span>I understand this is a design preview, not a live giveaway. Official Rules and a Privacy Notice will be provided before entries open.</span></label>
-            <p class="submission-warning">PREVIEW ONLY. Don't use real personal details. This form does not send, email, store or register any entry.</p>
-            <p class="error" id="formError" aria-live="polite"></p>
-            <button type="submit" class="submit-btn"><span>VIEW SAMPLE CONFIRMATION</span><span aria-hidden="true">↗</span></button>
-          </form>
-          <div id="sampleReceipt" class="sample-receipt" hidden aria-live="polite">
-            <div class="receipt-star">✳</div>
-            <span class="label-micro">DEMONSTRATION / NO ENTRY CREATED</span>
-            <h3>MESSAGE<br>RECEIVED.</h3>
-            <p>That's what the confirmation will look like. For now, nothing was sent or saved, and the giveaway is not open.</p>
-            <strong>DEMO ONLY / CASE 006</strong>
-            <button type="button" id="restartDemo">BACK TO PREVIEW FORM</button>
+            <a class="primary-cta hero-cta" href="#enter">SUBMIT YOUR ANSWER <span aria-hidden="true">➜</span></a>
+            <a class="down-cue" href="#how" aria-label="Read how to join"><span>⌄</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="clues-section section-pad" id="clues" aria-labelledby="cluesTitle">
-      <div class="content">
-        <div class="eyebrow"><span class="dot-square"></span> THE TRAIL <span class="ref-num">/ 002</span></div>
-        <h2 id="cluesTitle">WHERE IT<br><em>ALL BEGINS.</em></h2>
-        <p class="section-deck">The case stretches beyond this page. Each chapter holds a different piece of the story.</p>
-        <div class="chapter-list">
-          <article class="chapter chapter-youtube">
-            <div class="chapter-index">01 <span>THE FILM</span></div>
-            <div class="chapter-info"><div class="chapter-icon" aria-hidden="true">▶</div><div><h3>WATCH THE SEMA STORY</h3><p>The first clues are hidden in the feature film on YouTube. Watch closely and keep track of what you find.</p></div></div>
-            <span class="chapter-soon">VIDEO LINK COMING SOON <span>↗</span></span>
-          </article>
-          <article class="chapter chapter-instagram">
-            <div class="chapter-index">02 <span>THE DISPATCH</span></div>
-            <div class="chapter-info"><div class="chapter-icon" aria-hidden="true">◎</div><div><h3>HEAR FROM THE INVESTIGATOR</h3><p>A police investigator takes over the case on Instagram, revealing new developments and critical testimony.</p></div></div>
-            <span class="chapter-soon">VIDEO LINK COMING SOON <span>↗</span></span>
-          </article>
-          <article class="chapter chapter-site">
-            <div class="chapter-index">03 <span>THE FINAL SIGNAL</span></div>
-            <div class="chapter-info"><div class="chapter-icon" aria-hidden="true">⌁</div><div><h3>DECODE THE RADIOGRAM</h3><p>The intercepted message is waiting below. Count and decode it yourself, then enter your final answer above.</p></div></div>
-            <a class="chapter-link" href="#radiogram">READ THE TRANSMISSION <span aria-hidden="true">↗</span></a>
-          </article>
+    <section class="how-section section-pad" id="how" aria-labelledby="howTitle">
+      <div class="page">
+        <div class="line-heading"><span aria-hidden="true"></span><h2 id="howTitle">HOW TO JOIN</h2><span aria-hidden="true"></span></div>
+        <p class="section-subtitle">THREE CHAPTERS. ONE FINAL ANSWER.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon youtube-icon" aria-hidden="true"><span>▶</span></div>
+            <div><span class="step-number">01 / YOUTUBE</span><h3>WATCH THE FILM</h3><p>Discover the hidden numeric clues in our SEMA feature film. Look closely and keep track of what you find.</p><span class="coming-soon">FILM LINK COMING SOON</span></div>
+          </div>
+          <div class="step">
+            <div class="step-icon instagram-icon" aria-hidden="true"><span>◎</span></div>
+            <div><span class="step-number">02 / INSTAGRAM</span><h3>FOLLOW THE INVESTIGATION</h3><p>Our investigator shares important developments and witness information needed to solve the case.</p><span class="coming-soon">DISPATCH LINK COMING SOON</span></div>
+          </div>
+          <div class="step">
+            <div class="step-icon radio-icon" aria-hidden="true"><span>⌁</span></div>
+            <div><span class="step-number">03 / THIS SITE</span><h3>DECODE & SUBMIT</h3><p>Read the intercepted radiogram, solve the final code yourself and submit your answer below.</p><a href="#radiogram" class="micro-link">VIEW RADIOGRAM <span aria-hidden="true">↗</span></a></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="radiogram-section section-pad" id="radiogram" aria-labelledby="radioTitle">
-      <div class="content">
-        <div class="eyebrow"><span class="dot-square"></span> EVIDENCE / LAST SIGNAL <span class="ref-num">/ 003</span></div>
-        <div class="radio-title">
-          <div><h2 id="radioTitle">THE LAST<br><em>TRANSMISSION.</em></h2><p>An unidentified signal. Fifty-two characters. One hidden message.</p></div>
-          <div class="antenna" aria-hidden="true">⌁</div>
+      <div class="page">
+        <div class="radiogram-card">
+          <div class="radio-top">
+            <div class="radio-title-group"><span class="radio-signal" aria-hidden="true">⌁</span><div><span class="radio-overline">RESTRICTED EVIDENCE / CASE 006</span><h2 id="radioTitle">INTERCEPTED RADIOGRAM</h2></div></div>
+            <span class="radio-stamp">52 CHARACTERS</span>
+          </div>
+          <div class="radio-dash" aria-hidden="true"></div>
+          <div class="radio-code" id="radioCode">Z8F4R9M2T0K5VL3Q7H2W9P0B4IN5X1J8C6D3S7CA9T2L6V4R1Y5E</div>
+          <p class="radio-hint"><strong>HINT:</strong> The length of each equal segment matches the number of full years between the releases of GTA V and GTA VI. Keep only the last character of each segment. Count it yourself.</p>
+          <div class="radio-bottom"><span>NO COUNTER. NO AUTOMATIC DECODER.</span><span>FLG / SIGNAL ARCHIVE</span></div>
         </div>
-        <div class="signal-card">
-          <div class="signal-header"><span><i></i> TRANSMISSION RECOVERED</span><span>CASE 006 / CH-08</span></div>
-          <div class="signal-wave" aria-hidden="true"></div>
-          <p class="signal-intro">THE INTERCEPTED RADIOGRAM</p>
-          <div class="signal-code" id="radioCode">Z8F4R9M2T0K5VL3Q7H2W9P0B4IN5X1J8C6D3S7CA9T2L6V4R1Y5E</div>
-          <div class="signal-footer"><span>UNDECODED / ORIGINAL RECORD</span><span>52 CHARACTERS</span></div>
-        </div>
-        <div class="hint-note"><span class="hint-icon">✳</span><div><b>YOUR ONLY HINT</b><p>The length of each equal segment matches the number of full years between the releases of GTA V and GTA VI. Keep only the final character from each segment. Count it yourself.</p></div></div>
       </div>
     </section>
 
-    <section class="rules-section section-pad" id="rules">
-      <div class="content">
-        <div class="eyebrow"><span class="dot-square"></span> THE FINE PRINT <span class="ref-num">/ 004</span></div>
-        <h2>THE RULES<br><em>OF THE ROAD.</em></h2>
-        <div class="rules-layout">
-          <div class="rules-lead"><p>Free entry. No purchase necessary. Social follows and likes are not required. Solving the code does not guarantee a prize.</p><span>OFFICIAL TERMS ARE BEING FINALIZED</span></div>
-          <div class="rules-details">
-            <div><span>WHO CAN ENTER</span><p>Eligibility, states, age requirements and exceptions will be specified in the approved Official Rules.</p></div>
-            <div><span>WHEN IT HAPPENS</span><p>Entry period, drawing dates and winner notification procedures have not yet been announced.</p></div>
-            <div><span>WHAT'S AT STAKE</span><p>Six proposed GTA VI prizes: three Xbox and three PlayStation. Exact editions, pack contents, availability and prize values remain to be confirmed.</p></div>
-            <div><span>PRIVACY & OFFICIAL RULES</span><p>Official Rules, organizer contact details and Privacy Notice will be provided before real registration opens.</p></div>
+    <section class="entry-section section-pad" id="enter" aria-labelledby="entryTitle">
+      <div class="page">
+        <div class="entry-panel">
+          <div class="entry-copy">
+            <span class="panel-kicker">THE FINAL STEP</span>
+            <h2 id="entryTitle">READY TO<br><em>SUBMIT YOUR</em><br>ANSWER?</h2>
+            <p>Already cracked the case? Enter your final ten-character code and select your platform.</p>
+            <div class="entry-copy-mark" aria-hidden="true">✳</div>
+          </div>
+          <div class="entry-form-column">
+            <form id="entryForm" novalidate>
+              <label class="field code-field" for="entryCode"><span>FINAL PASSWORD <small>(4 LETTERS + 6 NUMBERS)</small></span><input id="entryCode" type="text" maxlength="10" inputmode="text" autocapitalize="characters" spellcheck="false" autocomplete="off" placeholder="AAAA000000" required></label>
+              <div class="fields-grid">
+                <label class="field" for="firstName"><span>FIRST NAME</span><input id="firstName" type="text" autocomplete="off" placeholder="First name" maxlength="80" required></label>
+                <label class="field" for="lastName"><span>LAST NAME</span><input id="lastName" type="text" autocomplete="off" placeholder="Last name" maxlength="80" required></label>
+                <label class="field" for="email"><span>EMAIL ADDRESS</span><input id="email" type="email" autocomplete="off" placeholder="you@example.com" maxlength="254" required></label>
+                <label class="field" for="state"><span>U.S. STATE</span><select id="state" required><option value="">Choose your state</option></select></label>
+              </div>
+              <fieldset class="platform-choice">
+                <legend>CHOOSE YOUR PLATFORM</legend>
+                <label><input type="radio" name="platform" value="xbox" required><span class="platform-letter">✕</span><span>Xbox Series X|S</span></label>
+                <label><input type="radio" name="platform" value="ps5" required><span class="platform-letter">△</span><span>PlayStation 5</span></label>
+              </fieldset>
+              <label class="check"><input id="age" type="checkbox" required><span>I am at least 18 years old and have reached the age of majority in my state.</span></label>
+              <label class="check"><input id="ack" type="checkbox" required><span>I understand this is a design preview only. Official Rules and a Privacy Notice will be published before real entries open.</span></label>
+              <p class="demo-notice">DESIGN PREVIEW — DO NOT ENTER REAL PERSONAL DATA. THIS FORM DOES NOT SEND OR SAVE AN ENTRY.</p>
+              <p id="formError" class="form-error" role="alert" aria-live="polite"></p>
+              <button class="primary-cta form-submit" type="submit"><span>VIEW SAMPLE CONFIRMATION</span><span aria-hidden="true">➜</span></button>
+            </form>
+            <div id="sampleReceipt" class="sample-receipt" hidden aria-live="polite">
+              <span class="receipt-icon">✳</span><h3>MESSAGE RECEIVED.</h3>
+              <p>This is a sample confirmation. No personal details were submitted and no giveaway entry was created.</p>
+              <strong>DEMO ONLY / CASE 006</strong>
+              <button id="restartDemo" type="button">BACK TO THE FORM ↗</button>
+            </div>
           </div>
         </div>
-        <div class="rules-bottom">THIS PAGE IS A VISUAL DESIGN PREVIEW. THERE IS NO ACTIVE SWEEPSTAKES OR ENTRY COLLECTION.</div>
+      </div>
+    </section>
+
+    <section class="rules-section section-pad" id="rules" aria-labelledby="rulesTitle">
+      <div class="page">
+        <div class="line-heading small-line-heading"><span aria-hidden="true"></span><h2 id="rulesTitle">RULES & STATUS</h2><span aria-hidden="true"></span></div>
+        <p>Free entry. No purchase necessary. Social media follows, likes and comments are not required. A correct code does not automatically guarantee a prize.</p>
+        <p>The six GTA VI prizes are proposed. The exact prize contents, dates, eligibility, drawing method and organizer details must be confirmed in the official rules before launch.</p>
+        <p class="rules-unavailable">OFFICIAL RULES, PRIVACY POLICY AND CONTACT INFORMATION — COMING BEFORE THE REAL GIVEAWAY OPENS.</p>
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="content"><div class="footer-main"><a class="logo" href="#top">FLG<span>✳</span></a><strong>SEE YOU IN<br>VICE CITY.</strong><a href="#top" class="up-arrow" aria-label="Back to top">↑</a></div><div class="footer-sub"><span>© FLG / SEMA 2026 CONCEPT</span><span>Independent fan-themed promotion concept. Not sponsored, endorsed, or administered by Rockstar Games, Take-Two, YouTube, Instagram or SEMA.</span></div></div></footer>
-  <a class="mobile-cta" href="#enter" id="mobileCTA">ENTER YOUR CODE <span>↗</span></a>
+  <footer class="footer">
+    <div class="page footer-inner"><div class="footer-links"><span>FLG / SEMA 2026</span><span aria-hidden="true">│</span><span>VICE CITY INTERCEPT</span></div><p>This is an independent design concept, not sponsored, endorsed or administered by Rockstar Games, Take-Two, YouTube, Instagram or SEMA.</p><a href="#top" class="back-top" aria-label="Return to top">↑</a></div>
+  </footer>
+  <a class="mobile-sticky-cta" id="mobileCTA" href="#enter">SUBMIT YOUR ANSWER <span aria-hidden="true">↗</span></a>
 </body>
 </html>

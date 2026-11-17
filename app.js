@@ -51,6 +51,12 @@
     get("sampleReceipt").hidden = false;
     get("sampleReceipt").scrollIntoView({behavior:"smooth",block:"center"});
   });
+  // A direct button handler keeps the preview consistent in embedded mobile browsers.
+  form.querySelector(".form-submit").addEventListener("click", event => {
+    event.preventDefault();
+    form.requestSubmit();
+  });
+
   get("restartDemo").addEventListener("click", () => {
     form.hidden = false;
     get("sampleReceipt").hidden = true;
@@ -69,7 +75,21 @@
     heroObserver.observe(document.querySelector(".hero"));
     entryObserver.observe(get("enter"));
   }
+  const menuToggle = get("menuToggle");
+  const mobileNav = get("mobileNav");
+  menuToggle.addEventListener("click", () => {
+    const expanding = menuToggle.getAttribute("aria-expanded") !== "true";
+    menuToggle.setAttribute("aria-expanded", String(expanding));
+    menuToggle.setAttribute("aria-label", expanding ? "Close navigation" : "Open navigation");
+    mobileNav.hidden = !expanding;
+  });
+
   document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", () => mobileCta.classList.remove("visible"));
+    link.addEventListener("click", () => {
+      mobileCta.classList.remove("visible");
+      mobileNav.hidden = true;
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    });
   });
 })();

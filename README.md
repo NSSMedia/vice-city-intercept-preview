@@ -1,25 +1,39 @@
-# Vice City Intercept - mobile-first standalone preview
+# Vice City Intercept - mobile-first preview
 
-This is a **new site**, separate from the previous FLG concept preview and live Shopify site. Its original sunset/palm/vintage-car visual direction references the general contemporary Vice City mood without using official Rockstar images, logos or game assets.
+A standalone single-page FLG SEMA 2026 concept at https://nssmedia.github.io/vice-city-intercept-preview/.
 
-## Site logic
+## Visual direction (2026-11-17)
 
-- YouTube SEMA film: hidden numeric clues. They are not duplicated here.
-- Instagram: the investigator gives witness statements and information needed to reconstruct the route. That information is not duplicated here.
-- This one-page site: short overview, proposed prizes, a single final-answer/registration form, story links (shown as coming soon until real URLs are supplied), the canonical 52-character radiogram with a simple manual-decoding clue, and a rules/status section.
-- No camera cards, witness dossiers, on-page game, progress meter, route builder, decoder or counting tools.
+The site implements a live, responsive version of the second visual reference approved in chat: bold white condensed Vice City lettering, pink script Intercept, a realistic 1950s convertible at a tropical neon waterfront sunset, hot-pink entry button, dark navy How to Join section, intercepted radiogram, integrated entry form, and rules/status footer.
 
-## Demo security
+- Main image on desktop: assets/vice-city-hero-desktop.webp
+- Main image on mobile: assets/vice-city-hero-mobile.webp
+- Images are AI-generated original visual assets created for this project, not official Rockstar artwork.
+- Both are WebP and loaded responsively through picture/source markup.
 
-The form is visual only. No submission to a server, no database, no email, no persistent storage. Submitted values are cleared before showing a clearly labeled example confirmation. Do not enter real personal data. Real Official Rules, eligibility, prize inventory and dates must be approved before launch.
+## User journey
 
-## Source assets
+- YouTube: hidden numerical clues in the SEMA film.
+- Instagram: investigator's developments and witness statements.
+- This website: 52-character radio message, explanation of where to find the story, final ten-character code field, signup preview and unapproved giveaway status/rules.
+- No on-page camera evidence, route builder, automatic cipher decoder, or counter.
 
-assets/vice-sunset.svg is original artwork, not an official game graphic.
-The secret password from WIKI/MARKETING/MEDIA/SHOW/SEMA-2026-GAME-V1.md is not present in client code.
+## Non-production safety
 
-## Local preview
+This is a public **design preview**, not a contest launch. The form validates only format, doesn't send email, store personal data, or create actual entries. It clears fields after a successful demo submission. There is no API/DB integration, prize fulfillment, real draw or administrator panel. Real rules, prize availability, eligibility, dates, links and privacy notice have not been finalized; published labels make that explicit.
 
-Run python3 -m http.server 8765 from the site directory and open http://localhost:8765.
+## Project and publication
 
-Permanent preview intended for a separate GitHub Pages repository.
+Canonical source in FLG project:
+directions/web-site/vice-city-intercept-mobile/
+
+Standalone GitHub Pages deployment:
+https://github.com/NSSMedia/vice-city-intercept-preview
+Branch: main, repository root. Changes to source are selectively copied to the separate deploy repository. Production Shopify/Sourcing Hub are never changed.
+
+## Source of puzzle
+
+WIKI/MARKETING/MEDIA/SHOW/SEMA-2026-GAME-V1.md
+WIKI/MARKETING/MEDIA/SHOW/SEMA-2026-GAME-ROUTE.md
+
+Secret final password and camera-number pairs are excluded from all public site assets.
