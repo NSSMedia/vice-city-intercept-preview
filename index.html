@@ -14,8 +14,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Kaushan+Script&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="./assets/vice-city-hero-mobile.webp" media="(max-width: 700px)">
   <link rel="preload" as="image" href="./assets/vice-city-hero-desktop.webp" media="(min-width: 701px)">
-  <link rel="stylesheet" href="./styles.css?v=20261117">
-  <script src="./app.js?v=20261117" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=20261117b">
+  <link rel="stylesheet" href="./polish.css?v=20261117c">
+  <script src="./app.js?v=20261117b" defer></script>
 </head>
 <body>
   <div class="preview-ribbon" role="note">DESIGN PREVIEW <span aria-hidden="true">✦</span> NOT AN ACTIVE GIVEAWAY</div>
@@ -59,11 +60,11 @@
               <strong class="prize-count">6</strong>
               <span class="prize-name">GTA VI<br><b>PRIZES</b></span>
               <span class="prize-line"></span>
-              <span class="platform-micro">✕ <b>3 FOR XBOX</b></span>
-              <span class="platform-micro">△ <b>3 FOR PLAYSTATION</b></span>
+              <span class="platform-micro"><img src="./assets/icons/xbox.svg" alt="" width="19" height="19"> <b>3 FOR XBOX</b></span>
+              <span class="platform-micro"><img src="./assets/icons/playstation.svg" alt="" width="19" height="19"> <b>3 FOR PLAYSTATION</b></span>
             </div>
-            <a class="primary-cta hero-cta" href="#enter">SUBMIT YOUR ANSWER <span aria-hidden="true">➜</span></a>
-            <a class="down-cue" href="#how" aria-label="Read how to join"><span>⌄</span></a>
+            <a class="primary-cta hero-cta" href="#enter">SUBMIT YOUR ANSWER <img class="button-arrow" src="./assets/icons/arrow-right.svg" alt="" width="22" height="22"></a>
+            <a class="down-cue" href="#how" aria-label="Read how to join"><img src="./assets/icons/chevron-down.svg" alt="" width="22" height="22"></a>
           </div>
         </div>
       </div>
@@ -75,15 +76,15 @@
         <p class="section-subtitle">THREE CHAPTERS. ONE FINAL ANSWER.</p>
         <div class="steps">
           <div class="step">
-            <div class="step-icon youtube-icon" aria-hidden="true"><span>▶</span></div>
+            <div class="step-icon youtube-icon" aria-hidden="true"><img src="./assets/icons/youtube.svg" alt="" width="31" height="28"></div>
             <div><span class="step-number">01 / YOUTUBE</span><h3>WATCH THE FILM</h3><p>Discover the hidden numeric clues in our SEMA feature film. Look closely and keep track of what you find.</p><span class="coming-soon">FILM LINK COMING SOON</span></div>
           </div>
           <div class="step">
-            <div class="step-icon instagram-icon" aria-hidden="true"><span>◎</span></div>
+            <div class="step-icon instagram-icon" aria-hidden="true"><img src="./assets/icons/instagram.svg" alt="" width="29" height="32"></div>
             <div><span class="step-number">02 / INSTAGRAM</span><h3>FOLLOW THE INVESTIGATION</h3><p>Our investigator shares important developments and witness information needed to solve the case.</p><span class="coming-soon">DISPATCH LINK COMING SOON</span></div>
           </div>
           <div class="step">
-            <div class="step-icon radio-icon" aria-hidden="true"><span>⌁</span></div>
+            <div class="step-icon radio-icon" aria-hidden="true"><img src="./assets/icons/broadcast.svg" alt="" width="34" height="31"></div>
             <div><span class="step-number">03 / THIS SITE</span><h3>DECODE & SUBMIT</h3><p>Read the intercepted radiogram, solve the final code yourself and submit your answer below.</p><a href="#radiogram" class="micro-link">VIEW RADIOGRAM <span aria-hidden="true">↗</span></a></div>
           </div>
         </div>
@@ -94,7 +95,7 @@
       <div class="page">
         <div class="radiogram-card">
           <div class="radio-top">
-            <div class="radio-title-group"><span class="radio-signal" aria-hidden="true">⌁</span><div><span class="radio-overline">RESTRICTED EVIDENCE / CASE 006</span><h2 id="radioTitle">INTERCEPTED RADIOGRAM</h2></div></div>
+            <div class="radio-title-group"><span class="radio-signal" aria-hidden="true"><img src="./assets/icons/broadcast.svg" alt="" width="39" height="36"></span><div><span class="radio-overline">RESTRICTED EVIDENCE / CASE 006</span><h2 id="radioTitle">INTERCEPTED RADIOGRAM</h2></div></div>
             <span class="radio-stamp">52 CHARACTERS</span>
           </div>
           <div class="radio-dash" aria-hidden="true"></div>
@@ -125,14 +126,14 @@
               </div>
               <fieldset class="platform-choice">
                 <legend>CHOOSE YOUR PLATFORM</legend>
-                <label><input type="radio" name="platform" value="xbox" required><span class="platform-letter">✕</span><span>Xbox Series X|S</span></label>
-                <label><input type="radio" name="platform" value="ps5" required><span class="platform-letter">△</span><span>PlayStation 5</span></label>
+                <label class="platform-card"><input type="radio" name="platform" value="xbox" required><span class="platform-brand xbox-brand"><img src="./assets/icons/xbox.svg" alt="" width="23" height="23"></span><span class="platform-name">Xbox Series X|S</span></label>
+                <label class="platform-card"><input type="radio" name="platform" value="ps5" required><span class="platform-brand ps-brand"><img src="./assets/icons/playstation.svg" alt="" width="23" height="23"></span><span class="platform-name">PlayStation 5</span></label>
               </fieldset>
               <label class="check"><input id="age" type="checkbox" required><span>I am at least 18 years old and have reached the age of majority in my state.</span></label>
               <label class="check"><input id="ack" type="checkbox" required><span>I understand this is a design preview only. Official Rules and a Privacy Notice will be published before real entries open.</span></label>
               <p class="demo-notice">DESIGN PREVIEW — DO NOT ENTER REAL PERSONAL DATA. THIS FORM DOES NOT SEND OR SAVE AN ENTRY.</p>
               <p id="formError" class="form-error" role="alert" aria-live="polite"></p>
-              <button class="primary-cta form-submit" type="submit"><span>VIEW SAMPLE CONFIRMATION</span><span aria-hidden="true">➜</span></button>
+              <button class="primary-cta form-submit" type="submit"><span>VIEW SAMPLE CONFIRMATION</span><img class="button-arrow" src="./assets/icons/arrow-right.svg" alt="" width="22" height="22"></button>
             </form>
             <div id="sampleReceipt" class="sample-receipt" hidden aria-live="polite">
               <span class="receipt-icon">✳</span><h3>MESSAGE RECEIVED.</h3>
@@ -155,8 +156,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="page footer-inner"><div class="footer-links"><span>FLG / SEMA 2026</span><span aria-hidden="true">│</span><span>VICE CITY INTERCEPT</span></div><p>This is an independent design concept, not sponsored, endorsed or administered by Rockstar Games, Take-Two, YouTube, Instagram or SEMA.</p><a href="#top" class="back-top" aria-label="Return to top">↑</a></div>
+    <div class="page footer-inner"><div class="footer-links"><span>FLG / SEMA 2026</span><span aria-hidden="true">│</span><span>VICE CITY INTERCEPT</span></div><p>This is an independent design concept, not sponsored, endorsed or administered by Rockstar Games, Take-Two, YouTube, Instagram or SEMA. Icons from <a href="https://fontawesome.com/license/free" target="_blank" rel="noopener noreferrer">Font Awesome Free</a>.</p><a href="#top" class="back-top" aria-label="Return to top">↑</a></div>
   </footer>
-  <a class="mobile-sticky-cta" id="mobileCTA" href="#enter">SUBMIT YOUR ANSWER <span aria-hidden="true">↗</span></a>
 </body>
 </html>

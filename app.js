@@ -18,7 +18,6 @@
   const stateSelect = get("state");
   const answer = get("entryCode");
   const error = get("formError");
-  const mobileCta = get("mobileCTA");
   states.forEach(([code, name]) => {
     const option = document.createElement("option");
     option.value = code;
@@ -62,19 +61,6 @@
     get("sampleReceipt").hidden = true;
     answer.focus();
   });
-  let heroVisible = true;
-  let entryVisible = false;
-  const syncCta = () => mobileCta.classList.toggle("visible", !heroVisible && !entryVisible);
-  if ("IntersectionObserver" in window) {
-    const heroObserver = new IntersectionObserver(([entry]) => {
-      heroVisible = entry.isIntersecting; syncCta();
-    }, {threshold:.02});
-    const entryObserver = new IntersectionObserver(([entry]) => {
-      entryVisible = entry.isIntersecting; syncCta();
-    }, {threshold:.03});
-    heroObserver.observe(document.querySelector(".hero"));
-    entryObserver.observe(get("enter"));
-  }
   const menuToggle = get("menuToggle");
   const mobileNav = get("mobileNav");
   menuToggle.addEventListener("click", () => {
@@ -86,7 +72,6 @@
 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", () => {
-      mobileCta.classList.remove("visible");
       mobileNav.hidden = true;
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Open navigation");

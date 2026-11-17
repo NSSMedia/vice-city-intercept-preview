@@ -37,3 +37,15 @@ WIKI/MARKETING/MEDIA/SHOW/SEMA-2026-GAME-V1.md
 WIKI/MARKETING/MEDIA/SHOW/SEMA-2026-GAME-ROUTE.md
 
 Secret final password and camera-number pairs are excluded from all public site assets.
+
+
+## Visual QA and logos (November 17, 2026)
+
+All branded platform/social icons are local SVG files under \`assets/icons/\`, not Unicode character substitutes:
+YouTube, Instagram, Xbox and PlayStation. The radio and arrow graphics also use matching SVG icons.
+
+Icons adapted from Font Awesome Free 7.1.0: free brands and free solid SVGs, under CC BY 4.0. Attribution/license: https://fontawesome.com/license/free. Logos identify external platforms only and do not imply sponsorship.
+
+Final visual QA: checked 320 / 360 / 390 / 768 / 1440 px widths, image/icon loading, text/input readability, platform radio selection, mobile navigation, radiogram length (52), test form validation and demo confirmation. Removed the floating mobile CTA after identifying overlap with the hero prize section.
+
+No actual submission, data storage or email sending has been enabled.
